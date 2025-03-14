@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.result-box {
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 10px;
+    background-color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.sentence {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sentence.current {
+    background-color: #e2f3ff;
+    border-left: 3px solid #0d6efd;
+    padding-left: 8px;
+}
+
+.sentence.complete {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.target-languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.target-languages .form-check {
+    min-width: 100px;
+}
+
+.system-log {
+    height: 150px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 0.85rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 10px;
+}
+
+.log-entry {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #dee2e6;
+}
+
+.log-entry.info {
+    color: #0d6efd;
+}
+
+.log-entry.error {
+    color: #dc3545;
+}
+
+.log-entry.success {
+    color: #198754;
+}
+
+.log-entry.warning {
+    color: #fd7e14;
+}
+
+.log-timestamp {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* 动画效果 */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.recording {
+    animation: pulse 1.5s infinite;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .card-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .result-box {
+        min-height: 150px;
+    }
+} 
