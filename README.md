@@ -1,6 +1,6 @@
 # 实时语音翻译系统
 
-这是一个基于阿里云 Gummy API 的实时语音翻译系统，支持多种语言之间的实时翻译。系统提供了两种翻译模式：实时流式翻译和同步文件翻译。
+这是一个基于通义实验室Gummy语音翻译大模型API的实时语音翻译系统，支持多种语言之间的实时翻译。系统提供了两种翻译模式：实时流式翻译和同步文件翻译。
 
 ## 功能特点
 
@@ -23,14 +23,14 @@
 ## 安装
 
 1. 克隆仓库
-bash
+```bash
 git clone https://github.com/prog-le/Simultaneous-Interpretation.git
 cd Simultaneous-Interpretation
-
+```
 2. 安装依赖
-bash
+```bash
 pip install -r requirements.txt
-
+```
 3. 创建上传目录
 
 ## 使用方法
